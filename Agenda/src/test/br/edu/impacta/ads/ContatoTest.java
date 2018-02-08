@@ -24,4 +24,11 @@ public class ContatoTest {
 		cdao.inserir(contato);
 		assertTrue("O contato nÃ£o foi adicionado.", cdao.existe(contato));
 	}
+	
+	@Test
+	public void testeDoBolinhot() {
+		
+		assertTrue("Existem dados já no banco.", cdao.lerTodos().size() > 0);
+	}
+	
 }
